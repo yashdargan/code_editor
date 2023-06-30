@@ -1,0 +1,7 @@
+@import '../../App';
+.Sidebar_container{
+ @include flex(20%,90vh,center,center,column);
+ background-color: gainsboro;
+ gap:2rem;
+
+}

@@ -1,0 +1,8 @@
+@import '../../App';
+
+.terminal_container{
+  @include flex(100%,40vh,center,center,none);
+  background-color: #454545;
+  color:white;
+  font-size: 3rem;
+}

@@ -1,0 +1,19 @@
+@mixin flex($w_val,$h_val,$justify_val,$align_val,$direction_val){
+  display:flex;
+  flex-direction: $direction_val;
+  width:$w_val;
+  height:$h_val;
+  justify-content: $justify_val;
+  align-items: $align_val;
+}
+
+.main_container{
+  @include flex(100%,none,center,none,column)//using flex property by passing(width,height,justify-content,align-items)
+
+}
+.center_container{
+  @include flex(100%,none,center,none,none)
+}
+.code_container{
+  @include flex(80%,none,center,none,column)
+}

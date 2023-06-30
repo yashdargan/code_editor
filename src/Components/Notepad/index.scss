@@ -1,0 +1,10 @@
+@import '../../App';
+
+.note_container {
+  @include flex(100%, 50vh, center, center, none);
+  background-color: red;
+
+}
+.text_area{
+  width:100%;
+}

@@ -1,0 +1,46 @@
+//using flex property by passing(width,height,justify-content,align-items)
+@import '../../App';
+//use for background-color
+@mixin bg-color($value){
+  background-color: $value;
+}
+
+//use for border and thier attribute
+@mixin border($position_val,$unit)
+{
+  border-#{$position_val}:$unit
+}
+//use for fonts and thier attribute
+@mixin font($poistion_val,$unit)
+{
+  font-#{$poistion_val}: $unit;
+}
+.container{
+  @include flex(100%,10vh,space-around,center,none);
+  @include bg-color(#454545);
+  @include font(size,larger);
+  @include font(weight,bold);
+  color:white;
+}
+.btn_container{
+  @include flex(16rem,4vh,space-between,none,none)
+}
+#run_btn{
+  border:none;
+  outline: blueviolet;
+  @include border(radius,10px);
+  @include bg-color(white);
+  padding:0 10px;
+  color:black;
+  &:hover{
+    cursor:pointer;
+  }
+}
+#deb_btn{
+  @extend #run_btn;
+  @include bg-color(white);
+}
+#quit_btn{
+  @extend #run_btn;
+  @include bg-color(white);
+}
