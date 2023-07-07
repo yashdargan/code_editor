@@ -18,6 +18,6 @@ return new Promise((resolve,reject)=>{
       });
   });
 }
-module.experts = { 
+module.exports = { 
 executeCpp,
 };
